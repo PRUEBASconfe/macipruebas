@@ -1,0 +1,129 @@
+/* ======== Estilos Generales ======== */
+.plan-estudios {
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+.plan-estudios h1, 
+.plan-estudios h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+/* ======== Bloques de Semestre ======== */
+.semestre {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.semestre h3 {
+  color: #007bff;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* ======== Tablas ======== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #0056b3;
+}
+
+td {
+  padding: 9px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Fila alternada */
+tr:nth-child(even) {
+  background: #f2f6ff;
+}
+
+/* ======== Fila de prerequisito ======== */
+.prereq {
+  background: #e8f0fe;
+  color: #003366;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* ======== Totales ======== */
+.totales-row {
+  background: #e0ebff;
+  font-weight: bold;
+  color: #003366;
+}
+
+.totales-row td {
+  border-top: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+  .plan-estudios {
+    padding: 10px;
+  }
+
+  .semestre {
+    padding: 12px;
+  }
+
+  table, th, td {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  .semestre h3 {
+    font-size: 1em;
+  }
+
+  .plan-estudios h1, .plan-estudios h2 {
+    font-size: 1.3em;
+  }
+
+  /* Permitir desplazamiento horizontal si la tabla es muy ancha */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* --- 📱 Extra para pantallas muy pequeñas (como 360px) --- */
+@media (max-width: 480px) {
+  th, td {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .semestre {
+    padding: 10px;
+  }
+
+  .plan-estudios h1 {
+    font-size: 1.2em;
+  }
+}
