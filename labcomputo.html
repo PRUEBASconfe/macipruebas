@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Cómputo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="Estilos/estiloslaboratorio.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="pagina-centrocomputo">
+  <header id="menumaci"></header>
+
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("menumaci").innerHTML = data;
+      });
+  </script>
+
+  <!-- Encargado -->
+  <section class="encargado">
+    <p><strong>A cargo de:</strong></p>
+    <img src="imagenes/encargado.PNG" alt="Encargado del Centro de Cómputo">
+    <h2>Mgr. Teodoro Yupa Mamani</h2>
+  </section>
+
+  <div class="titulo-videos">
+    VIDEOS DE AYUDA PARA PERSONAL DOCENTE Y ADMINISTRATIVO
+  </div>
+
+  <!-- Sección de videos -->
+  <section class="videos">
+  <div class="video">
+    <h3>Obtener los videos del Google Meet</h3>
+    <iframe src="https://www.youtube.com/embed/zITF8P7-V8M" allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <h3>Agregar firma a los PDF</h3>
+    <iframe src="https://www.youtube.com/embed/tRS-lPKwVwE" allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <h3>Unir PDF</h3>
+    <iframe src="https://www.youtube.com/embed/TM6oNf1DidE" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2025 Escuela Profesional de Matemática, Computación e Informática
+  </footer>
+</body>
+</html>

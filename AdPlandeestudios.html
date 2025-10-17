@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMCI-ADMISIÓN</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header id="menumaci"></header>
+    <section class="plan-pdf">
+  <div class="visor-pdf">
+    <iframe src="Admision/PlanMACI.pdf"></iframe>
+  </div>
+</section>
+</body>
+<script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("menumaci").innerHTML = data;
+    });
+</script>
+</html>

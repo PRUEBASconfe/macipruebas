@@ -1,0 +1,154 @@
+
+/* --- TÍTULO PRINCIPAL --- */
+h1 {
+  text-align: center;
+  color: #1a2b4c;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.infraestructura {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* --- PANEL IZQUIERDO --- */
+.contenedor-izquierda {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.bloque {
+  background: #ffffff;
+  border: 2px solid #d3d9e3;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.bloque:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.bloque h2 {
+  text-align: center;
+  background: linear-gradient(135deg, #c9dcf8, #b1d2ff);
+  border-radius: 15px;
+  padding: 10px;
+  color: #0b2c61;
+  margin-top: 0;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+.administrativos h2 {
+  background: linear-gradient(135deg, #e4eac9, #dce2c4);
+  color: #35421b;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #0048ff;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #002fb3;
+  text-decoration: underline;
+}
+
+/* --- PANEL DERECHO --- */
+.contenedor-derecha {
+  flex: 2;
+  min-width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* --- GALERÍA DE IMÁGENES --- */
+.galeria {
+  display: none;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.galeria img {
+  width: 730px;
+  height: 384px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+/* --- SOLO MOSTRAR LA GALERÍA SELECCIONADA --- */
+:target {
+  display: block;
+}
+
+/* --- ANIMACIÓN DE DESVANECIMIENTO --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .infraestructura {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-derecha {
+    order: -1;
+  }
+
+  .galeria img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .bloque {
+    padding: 18px;
+  }
+
+  .bloque h2 {
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}

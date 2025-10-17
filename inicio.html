@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMCI</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+
+<body class="pagina-inicio">
+    <header id="menumaci"></header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a la Escuela Porfesional de educación de Matemática, Computación e Informática</h1>
+                <p>Domina las herramientas de ofimática: documentos, hojas de cálculo, presentaciones y trabajo en equipo.</p>
+            </div>
+        </section>
+    </main>
+<script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("menumaci").innerHTML = data;
+    });
+</script>
+</body>
+</html>

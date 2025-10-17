@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infraestructura</title>
+  <link rel="stylesheet" href="estiloinfraestructura.css">
+   <link rel="stylesheet" href="estilos.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+     <header id="menumaci"></header>
+   <h1></h1>
+  <h1>INFRAESTRUCTURA:</h1>
+
+  <div class="infraestructura">
+    <!-- IZQUIERDA -->
+    <div class="contenedor-izquierda">
+      <div class="bloque aulas">
+        <h2>AULAS</h2>
+        <ul>
+          <li><a href="#img205">205 - (1ro y 2do año)</a></li>
+          <li><a href="#img214">214 - (4to y 5to año)</a></li>
+          <li><a href="#img200">200 - (3er año)</a></li>
+        </ul>
+      </div>
+
+      <div class="bloque administrativos">
+        <h2>ADMINISTRATIVOS</h2>
+        <ul>
+          <li><a href="#imgdocentes">Sala de docentes</a></li>
+          <li><a href="#imgsecretaria">Secretaría</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="contenedor-derecha">
+      <div id="img205" class="galeria">
+        <img src="infraestructura/6314WhatsApp Image 2020-07-14 at 4.08.01 PM.jpeg" alt="Aula 205 vista 1">
+        <img src="infraestructura/empty-school-class-room-college-600nw-2602248139.webp" alt="Aula 205 vista 2">
+      </div>
+
+      <div id="img214" class="galeria">
+        <img src="infraestructura/istockphoto-1410950079-612x612.jpg" alt="Aula 214">
+      </div>
+
+      <div id="img200" class="galeria">
+        <img src="infraestructura/modern-classroom-school-600nw-2624940731.webp" alt="Aula 200">
+      </div>
+
+      <div id="imgdocentes" class="galeria">
+        <img src="infraestructura/premium_photo-1680807869780-e0876a6f3cd5.jpeg" alt="Sala de docentes">
+        <img src="infraestructura/interior-aula-escuela-universidad-concepto-educativo-pizarra-tabla_1441-1694.jpg" alt="Sala de docentes 2">
+      </div>
+
+      <div id="imgsecretaria" class="galeria">
+        <img src="infraestructura/empty-school-class-room-college-600nw-2602248139.webp" alt="Secretaría">
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("menumaci").innerHTML = data;
+    });
+</script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admisión - EMCI</title>
+  <link rel="stylesheet" href="Estilos/estilosadmision.css">
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <header id="menumaci"></header>
+
+  <section class="admision">
+    <h1>¿Por qué estudiar esta profesión?</h1>
+    <p>
+      Recibirás una formación basada en la obtención de competencias personales, técnicas pedagógicas y sociales
+      para enfrentar los desafíos del desarrollo de la región, del país y del mundo, especialmente en el contexto de la educación.
+    </p>
+
+    <h2>Sé un Licenciado en Educación: especialidad en Matemática, Computación e Informática</h2>
+    <p>
+      Serás un profesional capacitado para ejercer la docencia en el logro de aprendizajes en el área de matemática
+      y computación en EBR y EBA, así como en los niveles de educación superior,
+      considerando la realidad educativa local, regional, nacional e internacional.
+    </p>
+
+    <h2>Checklist del postulante</h2>
+    <ul>
+      <li>Tienes capacidad de análisis y síntesis.</li>
+      <li>Tienes conocimientos en el uso de herramientas informáticas.</li>
+      <li>Tienes habilidad en la resolución de problemas matemáticos.</li>
+      <li>Tienes capacidad de crítica y autocrítica.</li>
+      <li>Tienes vocación para ejercer la docencia.</li>
+    </ul>
+
+    <h2>¿Cuál es el campo laboral?</h2>
+    <ul>
+      <li>Ejercicio de la docencia en Educación Básica Regular, EBA y Superior en institutos y universidades.</li>
+      <li>Campo de actuación profesional en centros preuniversitarios.</li>
+      <li>Administración y mantenimiento de centros de cómputo.</li>
+      <li>Proyectos de investigación científica y tecnológica orientados al mejoramiento de la calidad educativa.</li>
+    </ul>
+
+    <div class="info-academica">
+      <div class="bloque">
+        <h3>Duración de estudios</h3>
+        <p>05 años<br>10 semestres académicos</p>
+      </div>
+      <div class="bloque">
+        <h3>Grado académico</h3>
+        <p>Bachiller en Ciencias de la Educación</p>
+      </div>
+      <div class="bloque">
+        <h3>Título profesional</h3>
+        <p>Licenciado en Educación, especialidad en Matemática, Computación e Informática</p>
+      </div>
+    </div>
+
+     <h2>Te convertirás en un profesional...</h2>
+
+    <div class="competencias">
+      <p>✔️ Con dominio de la metodología de la planificación curricular.</p>
+      <p>✔️ Capaz de desarrollar metodologías y recursos didácticos para el logro de aprendizajes.</p>
+      <p>✔️ Con conocimiento de las teorías educativas generales y psicológicas para resolver problemas del aprendizaje de las matemáticas.</p>
+      <p>✔️ Con conocimiento del proceso de administración y gestión educativa.</p>
+      <p>✔️ Capaz de aplicar estrategias y conocimientos matemáticos.</p>
+      <p>✔️ Con pensamiento lógico y razonamiento analítico.</p>
+      <p>✔️ Con dominio del manejo de equipos del laboratorio de cómputo e informática y sus módulos de aprendizaje.</p>
+    </div>
+  </section>
+
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("menumaci").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

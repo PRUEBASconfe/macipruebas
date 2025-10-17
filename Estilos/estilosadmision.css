@@ -1,0 +1,113 @@
+/* Estructura general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centra todo el texto */
+  color: #333;
+}
+
+/* Sección principal */
+.admision {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+.admision h1 {
+  font-size: 2.3em;
+  color: #007b5e;
+  margin-bottom: 20px;
+}
+
+.admision h2 {
+  font-size: 1.7em;
+  color: #006644;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.admision h3 {
+  color: #009966;
+  margin-bottom: 10px;
+}
+
+/* Párrafos */
+.admision p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 10px auto;
+  width: 90%;
+}
+
+/* Listas */
+.admision ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left; /* Para que las viñetas se vean ordenadas */
+  display: inline-block; /* Centra visualmente la lista */
+}
+
+.admision li {
+  font-size: 1.05em;
+  padding: 6px 0;
+  position: relative;
+}
+
+/* Agrega una viñeta elegante antes de cada elemento */
+.admision li::before {
+  content: "✔";
+  color: #009966;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Bloques de información académica */
+.info-academica {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.bloque {
+  background: #f1fff6;
+  border: 2px solid #009966;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.bloque h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.bloque p {
+  font-size: 1.1em;
+}
+
+/* Competencias */
+.competencias {
+  background: #e8f9ef;
+  border-left: 6px solid #009966;
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: left;
+  width: 85%;
+}
+
+.competencias p {
+  margin: 10px 0;
+  font-size: 1.05em;
+}
